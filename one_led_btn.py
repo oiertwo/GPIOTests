@@ -4,8 +4,7 @@ from signal import pause
 led = LED(17)
 button = Button(3)
 
-button.when_pressed = led.on()
-button.when_released = led.off()
+button.when_pressed = led.on
+button.when_released = led.off
 
 pause()
-
